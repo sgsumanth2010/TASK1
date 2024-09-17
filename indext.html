@@ -1,0 +1,1095 @@
+<style>
+    .hero-section { border-radius: 0; display: flex; flex-direction: column; }
+    .hero-bg { background-color: #fefcfb; display: flex; width: 100%; flex-direction: column; align-items: center; padding: 0 80px 120px; }
+    .hero-content { display: flex; width: 100%; max-width: 1326px; flex-direction: column; margin: 0 0 -24px 78px; }
+    .header { background-color: #fefcfb; width: 100%; max-width: 1170px; padding: 32px 0; }
+    .header-content { display: flex; gap: 20px; }
+    .logo-container { display: flex; align-items: center; gap: 10px; color: #222; letter-spacing: 0.14px; font: 700 24px/1 Volkhov, sans-serif; }
+    .logo-text { flex-grow: 1; }
+    .logo-icon { width: 19px; height: 19px; }
+    .nav-menu { display: flex; gap: 32px; color: #222; font: 400 16px Poppins, sans-serif; }
+    .nav-item { color: #222; }
+    .nav-item-active { color: #222; }
+    .auth-buttons { display: flex; gap: 20px; font: 600 16px Poppins, sans-serif; }
+    .login-btn { color: #fd8d3a; text-align: right; }
+    .signup-btn { border-radius: 5px; background-color: #fa7436; box-shadow: 0 8px 16px rgba(250, 116, 54, 0.24); color: #fff; text-align: center; padding: 13px 50px; }
+    .hero-main { display: flex; gap: 20px; }
+    .hero-text { display: flex; margin-top: 96px; flex-grow: 1; flex-direction: column; font-family: Poppins, sans-serif; }
+    .hero-title { color: #222; font: 700 64px/70px Volkhov, sans-serif; }
+    .hero-description { color: #666; font-size: 20px; font-weight: 400; line-height: 40px; margin: 32px 24px 0 0; }
+    .discover-btn { border-radius: 5px; border: 1px solid #fa7436; background-color: #fff; align-self: start; margin-top: 64px; font-size: 18px; color: #fa7436; font-weight: 500; line-height: 32px; padding: 14px 28px; }
+    .hero-image { aspect-ratio: 1.34; object-fit: contain; object-position: center; width: 100%; border-radius: 0; flex-grow: 1; }
+    .search-box { border-radius: 10px; background-color: #fff; box-shadow: 0 2px 80px 2px rgba(0, 0, 0, 0.06); align-self: center; margin-top: 56px; width: 841px; max-width: 100%; padding: 32px 24px; }
+    .search-form { display: flex; gap: 20px; }
+    .search-inputs { display: flex; width: 100%; flex-direction: column; align-self: stretch; font-family: Poppins, sans-serif; }
+    .input-group { display: flex; width: 100%; max-width: 491px; gap: 20px; font-size: 16px; color: #222; font-weight: 500; flex-wrap: wrap; justify-content: space-between; }
+    .input-item { display: flex; gap: 4px; align-items: center; }
+    .input-icon { width: 12px; height: 7px; stroke-width: 2px; stroke: #fa7436; }
+    .input-labels { display: flex; margin-top: 10px; gap: 40px 98px; font-size: 12px; color: #666; font-weight: 400; flex-wrap: wrap; }
+    .input-label { flex-grow: 1; width: 106px; }
+    .explore-btn { border-radius: 5px; background-color: #fa7436; box-shadow: 0 8px 16px 0 rgba(250, 116, 54, 0.16); color: #fff; width: 100%; padding: 14px 28px; font: 500 18px/32px Poppins, sans-serif; }
+    
+    @media (max-width: 991px) {
+      .hero-bg { max-width: 100%; padding: 0 20px 100px; }
+      .hero-content { max-width: 100%; margin-bottom: 10px; }
+      .header-content { flex-direction: column; align-items: stretch; gap: 0; }
+      .logo-container { margin-top: 40px; }
+      .nav-menu { margin-top: 40px; }
+      .auth-buttons { margin-top: 40px; }
+      .signup-btn { padding: 13px 20px; }
+      .hero-main { flex-direction: column; align-items: stretch; gap: 0; }
+      .hero-text { max-width: 100%; margin-top: 40px; }
+      .hero-title { max-width: 100%; font-size: 40px; line-height: 48px; }
+      .hero-description { max-width: 100%; margin-right: 10px; }
+      .discover-btn { margin-top: 40px; padding: 14px 20px; }
+      .hero-image { max-width: 100%; margin-top: 20px; }
+      .search-box { margin-top: 40px; padding: 32px 20px; }
+      .search-form { flex-direction: column; align-items: stretch; gap: 0; }
+      .search-inputs { max-width: 100%; margin-top: 40px; }
+      .input-group { white-space: normal; }
+      .input-labels { max-width: 100%; }
+      .explore-btn { margin-top: 40px; padding: 14px 20px; }
+    }
+    </style>
+    
+    
+    <section class="hero-section">
+      <div class="hero-bg">
+        <div class="hero-content">
+          <header class="header">
+            <div class="header-content">
+              <div class="logo-container">
+                <div class="logo-text">Trabook</div>
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/902ca2bc5764b1f9bce2dfa075a02331e461c2108d12098b9ac104de9926ca96?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="logo-icon" alt="" />
+              </div>
+              <nav class="nav-menu">
+                <a href="#" class="nav-item-active">Home</a>
+                <a href="#" class="nav-item">About</a>
+                <a href="#" class="nav-item">Destination</a>
+                <a href="#" class="nav-item">Tour</a>
+                <a href="#" class="nav-item">Blog</a>
+              </nav>
+              <div class="auth-buttons">
+                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="signup-btn">Sign up</a>
+              </div>
+            </div>
+          </header>
+          <div class="hero-main">
+            <div class="hero-text">
+              <h1 class="hero-title">
+                Get started your exciting <span style="color: #fa7436;">journey</span>
+                <br /> with us.
+              </h1>
+              <p class="hero-description">
+                A Team of experienced tourism professionals will provide you with the best advice and tips for your desire place.
+              </p>
+              <a href="#" class="discover-btn">Discover Now</a>
+            </div>
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6ed8534decdc0fa848d63ba96b71e5be8acc76b7bbe0bf2bc33a1adc12a8bf0a?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="hero-image" alt="Exciting travel destination" />
+          </div>
+          <div class="search-box">
+            <form class="search-form">
+              <div class="search-inputs">
+                <div class="input-group">
+                  <div class="input-item">
+                    <label for="location" class="visually-hidden">Location</label>
+                    <input type="text" id="location" placeholder="Location" />
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/534adf36bdbcab6058efacc44a7fd989a3303626e34e09b4294fcd060b0842d2?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="input-icon" alt="" />
+                  </div>
+                  <div class="input-item">
+                    <label for="date" class="visually-hidden">Date</label>
+                    <input type="date" id="date" />
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/534adf36bdbcab6058efacc44a7fd989a3303626e34e09b4294fcd060b0842d2?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="input-icon" alt="" />
+                  </div>
+                  <div class="input-item">
+                    <label for="guest" class="visually-hidden">Guest</label>
+                    <input type="number" id="guest" placeholder="Number of guests" />
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/534adf36bdbcab6058efacc44a7fd989a3303626e34e09b4294fcd060b0842d2?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="input-icon" alt="" />
+                  </div>
+                </div>
+                <div class="input-labels">
+                  <label for="location" class="input-label">Where are you going</label>
+                  <label for="date" class="input-label">When you will go</label>
+                  <label for="guest" class="input-label">Number of guest</label>
+                </div>
+              </div>
+              <button type="submit" class="explore-btn">Explore Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style>
+        .things-you-need {
+          border-radius: 0;
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .background {
+          background-color: #f7f8fc;
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 120px 80px;
+        }
+        
+        @media (max-width: 991px) {
+          .background {
+            max-width: 100%;
+            padding: 100px 20px;
+          }
+        }
+        
+        .content-wrapper {
+          display: flex;
+          margin-bottom: -24px;
+          width: 1170px;
+          max-width: 100%;
+          flex-direction: column;
+        }
+        
+        @media (max-width: 991px) {
+          .content-wrapper {
+            margin-bottom: 10px;
+          }
+        }
+        
+        .header-container {
+          align-self: flex-end;
+          margin-right: 78px;
+          width: 767px;
+          max-width: 100%;
+        }
+        
+        @media (max-width: 991px) {
+          .header-container {
+            margin-right: 10px;
+          }
+        }
+        
+        .header-content {
+          gap: 20px;
+          display: flex;
+        }
+        
+        @media (max-width: 991px) {
+          .header-content {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0;
+          }
+        }
+        
+        .text-column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 74%;
+          margin-left: 0;
+        }
+        
+        @media (max-width: 991px) {
+          .text-column {
+            width: 100%;
+          }
+        }
+        
+        .text-content {
+          display: flex;
+          flex-grow: 1;
+          flex-direction: column;
+        }
+        
+        @media (max-width: 991px) {
+          .text-content {
+            max-width: 100%;
+            margin-top: 40px;
+          }
+        }
+        
+        .main-title {
+          color: #fa7436;
+          font: 700 48px/1 Volkhov, sans-serif;
+        }
+        
+        @media (max-width: 991px) {
+          .main-title {
+            max-width: 100%;
+            font-size: 40px;
+          }
+        }
+        
+        .description {
+          color: #666;
+          text-align: center;
+          align-self: center;
+          margin-top: 24px;
+          font: 400 18px/32px Poppins, sans-serif;
+        }
+        
+        @media (max-width: 991px) {
+          .description {
+            max-width: 100%;
+          }
+        }
+        
+        .image-column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 26%;
+          margin-left: 20px;
+        }
+        
+        @media (max-width: 991px) {
+          .image-column {
+            width: 100%;
+          }
+        }
+        
+        .header-image {
+          aspect-ratio: 1.37;
+          object-fit: contain;
+          object-position: center;
+          width: 180px;
+          max-width: 100%;
+        }
+        
+        @media (max-width: 991px) {
+          .header-image {
+            margin-top: 40px;
+          }
+        }
+        
+        .gallery-section {
+          margin-top: 64px;
+        }
+        
+        @media (max-width: 991px) {
+          .gallery-section {
+            max-width: 100%;
+            margin-top: 40px;
+          }
+        }
+        
+        .gallery-container {
+          gap: 20px;
+          display: flex;
+        }
+        
+        @media (max-width: 991px) {
+          .gallery-container {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0;
+          }
+        }
+        
+        .gallery-column {
+          display: flex;
+          flex-direction: column;
+          line-height: normal;
+          width: 33%;
+          margin-left: 0;
+        }
+        
+        @media (max-width: 991px) {
+          .gallery-column {
+            width: 100%;
+          }
+        }
+        
+        .gallery-image {
+          aspect-ratio: 1.33;
+          object-fit: contain;
+          object-position: center;
+          width: 100%;
+          border-radius: 0;
+          flex-grow: 1;
+        }
+        
+        @media (max-width: 991px) {
+          .gallery-image {
+            margin-top: 30px;
+          }
+        }
+        
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          white-space: nowrap;
+          border: 0;
+        }
+        </style>
+        
+        <section class="things-you-need">
+          <div class="background">
+            <div class="content-wrapper">
+              <div class="header-container">
+                <div class="header-content">
+                  <div class="text-column">
+                    <div class="text-content">
+                      <h2 class="main-title">Things you need <span style="color: #fa7436;">to do</span></h2>
+                      <p class="description">We ensure that you'll embark on a perfectly planned, safe vacation at a price you can afford.</p>
+                    </div>
+                  </div>
+                  <div class="image-column">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ec1e60be1fa1bcd84c54043ce0a2609aefeedf3080b6c829d27d53707ea81dea?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="header-image" alt="Illustration related to vacation planning" />
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-section">
+                <div class="gallery-container">
+                  <div class="gallery-column">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bde090b982afa69696c8f59f0764462d1486754374bc9f472496f242d0ec8bcb?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="gallery-image" alt="Vacation destination image 1" />
+                  </div>
+                  <div class="gallery-column">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7f6f1df5d1e70220e9ef83510f3815d382130145f2ae290ebfcd4b41c56829a2?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="gallery-image" alt="Vacation destination image 2" />
+                  </div>
+                  <div class="gallery-column">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0b825506ef622f2deb527b4f4e735081d27482ee5d5b816eed33681324b23f65?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="gallery-image" alt="Vacation destination image 3" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <style>
+            .exclusive-deals { border-radius: 0; display: flex; flex-direction: column; }
+            .deals-bg { background-color: #fefcfb; display: flex; width: 100%; flex-direction: column; align-items: center; justify-content: center; padding: 120px 80px; }
+            .deals-container { display: flex; margin-bottom: -24px; width: 1170px; max-width: 100%; flex-direction: column; align-items: center; }
+            .deals-title { color: #fa7436; font: 700 48px/1 Volkhov, sans-serif; }
+            .deals-description { color: #666; text-align: center; margin-top: 24px; width: 433px; font: 400 18px/32px Poppins, sans-serif; }
+            .deals-grid { align-self: stretch; margin-top: 64px; gap: 20px; display: flex; }
+            .deal-card { border-radius: 8px; background-color: #fefcfb; display: flex; width: 100%; padding-bottom: 32px; flex-direction: column; font-family: Poppins, sans-serif; text-align: center; border: 2px solid rgba(102, 102, 102, 0.08); }
+            .deal-image { aspect-ratio: 0.93; object-fit: contain; object-position: center; width: 100%; border-radius: 8px; }
+            .deal-info { display: flex; gap: 20px; justify-content: space-between; margin: 32px 16px 0; }
+            .deal-location { color: #222; font-size: 24px; font-weight: 500; line-height: 1; }
+            .deal-rating { align-self: start; display: flex; gap: 8px; font-size: 16px; color: #666; font-weight: 400; }
+            .rating-icon { aspect-ratio: 1; object-fit: contain; object-position: center; width: 16px; border-radius: 8px; margin: auto 0; }
+            .deal-details { display: flex; gap: 20px; font-size: 16px; justify-content: space-between; margin: 18px 16px 0; }
+            .deal-country { align-self: start; display: flex; gap: 8px; color: #666; font-weight: 400; line-height: 1; }
+            .country-icon { aspect-ratio: 0.81; object-fit: contain; object-position: center; width: 13px; fill: #999; margin: auto 0; }
+            .deal-prices { display: flex; gap: 16px; }
+            .original-price { color: #999; font-weight: 500; margin: auto 0; }
+            .discounted-price { border-radius: 8px; background-color: #ffe7db; color: #fa7436; font-weight: 600; padding: 2px 6px; }
+            .featured-image { aspect-ratio: 0.64; object-fit: contain; object-position: center; width: 272px; border-radius: 10px; box-shadow: 0 16px 80px rgba(254, 147, 94, 0.2); max-width: 100%; flex-grow: 1; }
+            .pagination-dots { aspect-ratio: 2.6; object-fit: contain; object-position: center; width: 104px; margin-top: 48px; max-width: 100%; }
+            .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+            
+            @media (max-width: 991px) {
+              .deals-bg { max-width: 100%; padding: 100px 20px; }
+              .deals-container { margin-bottom: 10px; }
+              .deals-title { max-width: 100%; font-size: 40px; }
+              .deals-grid { max-width: 100%; margin-top: 40px; flex-direction: column; align-items: stretch; }
+              .deal-card { margin-top: 29px; }
+              .deal-info, .deal-details { margin: 0 10px; }
+              .featured-image { margin-top: 29px; }
+              .pagination-dots { margin-top: 40px; }
+            }
+            </style>
+            
+            <section class="exclusive-deals">
+              <div class="deals-bg">
+                <div class="deals-container">
+                  <h2 class="deals-title">Exclusive <span style="color: #fa7436;">deals & discounts</span></h2>
+                  <p class="deals-description">Discover our fantastic early booking discounts & start planning your journey.</p>
+                  <div class="deals-grid">
+                    <article class="deal-card">
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c934479638ebeb24532a6212412ae548fc7efa5baa92e3f9ede49f8b6cb0af2f?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="View of Madrid" class="deal-image" />
+                      <div class="deal-info">
+                        <h3 class="deal-location">Madrid</h3>
+                        <div class="deal-rating">
+                          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1277984b74cc0cfb2739989df873cb0faffeb4471b83ea6acc3dc717ccf48ed4?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="" class="rating-icon" />
+                          <span>4.8</span>
+                        </div>
+                      </div>
+                      <div class="deal-details">
+                        <div class="deal-country">
+                          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a9b07f0da63c8d9f8440e92fec703a8160e234d6dec00aefa0f4a61caa9af8b6?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="" class="country-icon" />
+                          <span>Spain</span>
+                        </div>
+                        <div class="deal-prices">
+                          <span class="original-price">$950</span>
+                          <span class="discounted-price">$850</span>
+                        </div>
+                      </div>
+                    </article>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7d7c709f1aa14d23c04e05de84b1e37eda084c876bd7e66fb745a58c331af5cf?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="Featured destination" class="featured-image" />
+                    <article class="deal-card">
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7c729c84ff85ab20794d24ea2860fe732adc1331a811494dac72da387c563fb7?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="View of Paris" class="deal-image" />
+                      <div class="deal-info">
+                        <h3 class="deal-location">Paris</h3>
+                        <div class="deal-country">
+                          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a9b07f0da63c8d9f8440e92fec703a8160e234d6dec00aefa0f4a61caa9af8b6?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="" class="country-icon" />
+                          <span>France</span>
+                        </div>
+                      </div>
+                      <div class="deal-details">
+                        <div class="deal-rating">
+                          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1277984b74cc0cfb2739989df873cb0faffeb4471b83ea6acc3dc717ccf48ed4?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="" class="rating-icon" />
+                          <span>4.4</span>
+                        </div>
+                        <div class="deal-prices">
+                          <span class="original-price">$699</span>
+                          <span class="discounted-price">$599</span>
+                        </div>
+                      </div>
+                    </article>
+                    <article class="deal-card">
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/996038df5008aa53b2b602aedf138c151a11f8a43e7d591280df262cf02fecfb?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="View of London" class="deal-image" />
+                      <div class="deal-info">
+                        <h3 class="deal-location">London</h3>
+                        <div class="deal-rating">
+                          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1277984b74cc0cfb2739989df873cb0faffeb4471b83ea6acc3dc717ccf48ed4?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="" class="rating-icon" />
+                          <span>4.8</span>
+                        </div>
+                      </div>
+                      <div class="deal-details">
+                        <div class="deal-country">
+                          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a9b07f0da63c8d9f8440e92fec703a8160e234d6dec00aefa0f4a61caa9af8b6?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="" class="country-icon" />
+                          <span>UK</span>
+                        </div>
+                        <div class="deal-prices">
+                          <span class="original-price">$850</span>
+                          <span class="discounted-price">$850</span>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d4b8d22f800fef0205b19f1ceaac2ce29b80ae2bc14464abb2d7b782e3e6e1d7?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="" class="pagination-dots" />
+                </div>
+              </div>
+            </section>
+            <style>
+                .vacation-plan { border-radius: 0; display: flex; flex-direction: column; }
+                .vacation-bg { background-color: #fefcfb; display: flex; width: 100%; flex-direction: column; align-items: center; justify-content: center; padding: 120px 80px; }
+                @media (max-width: 991px) { .vacation-bg { max-width: 100%; padding: 100px 20px; } }
+                .vacation-content { display: flex; margin-bottom: -24px; width: 1170px; max-width: 100%; flex-direction: column; }
+                @media (max-width: 991px) { .vacation-content { margin-bottom: 10px; } }
+                .vacation-header { align-self: flex-end; display: flex; width: 843px; max-width: 100%; flex-direction: column; }
+                .vacation-title-wrapper { width: 655px; max-width: 100%; }
+                .vacation-title-container { gap: 20px; display: flex; }
+                @media (max-width: 991px) { .vacation-title-container { flex-direction: column; align-items: stretch; gap: 0; } }
+                .vacation-title-column { display: flex; flex-direction: column; line-height: normal; width: 83%; margin-left: 0; }
+                @media (max-width: 991px) { .vacation-title-column { width: 100%; } }
+                .vacation-title-content { display: flex; flex-grow: 1; flex-direction: column; }
+                @media (max-width: 991px) { .vacation-title-content { max-width: 100%; margin-top: 31px; } }
+                .vacation-title { color: #fa7436; margin: 0 44px 0 42px; font: 700 48px/1 Volkhov, sans-serif; }
+                @media (max-width: 991px) { .vacation-title { max-width: 100%; margin-right: 10px; font-size: 40px; } }
+                .vacation-description { color: #666; text-align: center; margin-top: 24px; font: 400 18px/32px Poppins, sans-serif; }
+                @media (max-width: 991px) { .vacation-description { max-width: 100%; } }
+                .vacation-image-column { display: flex; flex-direction: column; line-height: normal; width: 17%; margin-left: 20px; }
+                @media (max-width: 991px) { .vacation-image-column { width: 100%; } }
+                .vacation-image { aspect-ratio: 1.31; object-fit: contain; object-position: center; width: 106px; max-width: 100%; }
+                @media (max-width: 991px) { .vacation-image { margin-top: 31px; } }
+                .vacation-decoration { aspect-ratio: 2.8; object-fit: contain; object-position: center; width: 112px; align-self: flex-end; max-width: 100%; }
+                .vacation-destinations { margin-top: 24px; }
+                @media (max-width: 991px) { .vacation-destinations { max-width: 100%; } }
+                .destination-container { gap: 20px; display: flex; }
+                @media (max-width: 991px) { .destination-container { flex-direction: column; align-items: stretch; gap: 0; } }
+                .destination-column { display: flex; flex-direction: column; line-height: normal; width: 33%; margin-left: 0; }
+                @media (max-width: 991px) { .destination-column { width: 100%; } }
+                .destination-image { aspect-ratio: 0.83; object-fit: contain; object-position: center; width: 100%; border-radius: 16px; flex-grow: 1; }
+                @media (max-width: 991px) { .destination-image { margin-top: 30px; } }
+                .destination-card { border-radius: 16px; background-color: #fefcfb; box-shadow: 0 16px 80px rgba(254, 147, 94, 0.2); display: flex; width: 100%; flex-direction: column; align-items: center; font-family: Poppins, sans-serif; margin: 0 auto; padding: 0 1px 24px; }
+                @media (max-width: 991px) { .destination-card { margin-top: 30px; } }
+                .destination-photo { aspect-ratio: 1.13; object-fit: contain; object-position: center; width: 100%; border-radius: 16px; align-self: stretch; }
+                .destination-info { display: flex; margin-top: 24px; width: 319px; max-width: 100%; gap: 20px; font-size: 24px; white-space: nowrap; line-height: 1; justify-content: space-between; }
+                @media (max-width: 991px) { .destination-info { white-space: initial; } }
+                .destination-name { color: #222; font-weight: 500; }
+                .destination-price { color: #fa7436; font-weight: 600; }
+                .destination-details { display: flex; margin-top: 16px; width: 319px; max-width: 100%; gap: 20px; font-size: 16px; color: #666; justify-content: space-between; }
+                .trip-duration { display: flex; gap: 18px; font-weight: 500; }
+                .duration-icon { aspect-ratio: 1.19; object-fit: contain; object-position: center; width: 19px; margin: auto 0; }
+                .rating { display: flex; gap: 9px; font-weight: 400; white-space: nowrap; text-align: center; }
+                @media (max-width: 991px) { .rating { white-space: initial; } }
+                .rating-icon { aspect-ratio: 1; object-fit: contain; object-position: center; width: 16px; border-radius: 10px; margin: auto 0; }
+                .destination-card-alt { border-radius: 16px; border: 2px solid rgba(102, 102, 102, 0.08); background: #fff; display: flex; width: 100%; flex-direction: column; font-family: Poppins, sans-serif; margin: 0 auto; padding: 0 1px 24px; }
+                @media (max-width: 991px) { .destination-card-alt { margin-top: 30px; } }
+                .destination-info-alt { display: flex; gap: 20px; font-size: 24px; white-space: nowrap; line-height: 1; justify-content: space-between; margin: 24px 24px 0 25px; }
+                @media (max-width: 991px) { .destination-info-alt { white-space: initial; margin: 0 10px; } }
+                .destination-details-alt { align-self: center; display: flex; margin-top: 16px; width: 317px; max-width: 100%; gap: 20px; font-size: 16px; color: #666; justify-content: space-between; }
+                .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+                </style>
+                
+                <section class="vacation-plan">
+                  <div class="vacation-bg">
+                    <div class="vacation-content">
+                      <header class="vacation-header">
+                        <div class="vacation-title-wrapper">
+                          <div class="vacation-title-container">
+                            <div class="vacation-title-column">
+                              <div class="vacation-title-content">
+                                <h2 class="vacation-title">Best <span style="color: #fa7436">vacation plan</span></h2>
+                                <p class="vacation-description">Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers!</p>
+                              </div>
+                            </div>
+                            <div class="vacation-image-column">
+                              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce5140fb5a1ddca194e2b4072d029455882127b6055df35e4758bfc68981804d?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="vacation-image" alt="Vacation planning illustration" />
+                            </div>
+                          </div>
+                        </div>
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d17f4d945333a3f00cab1b2751d7f607524795e3bf18efbd47c2082176cb07b1?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="vacation-decoration" alt="" />
+                      </header>
+                      <div class="vacation-destinations">
+                        <div class="destination-container">
+                          <div class="destination-column">
+                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c9996eaf53313609608a48f18f1a5bb14f2a36d457e0fa2f8c06121dfe6e5bb3?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="destination-image" alt="Scenic vacation destination" />
+                          </div>
+                          <div class="destination-column">
+                            <article class="destination-card">
+                              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f340feb181fa701004eb7bc370c076bd4deef0eaffd6d37c0dd7d3a7b6e03550?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="destination-photo" alt="London cityscape" />
+                              <div class="destination-info">
+                                <h3 class="destination-name">London, UK</h3>
+                                <p class="destination-price">$2,42k</p>
+                              </div>
+                              <div class="destination-details">
+                                <div class="trip-duration">
+                                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8e8c838797a84a679018001d5af966c9afc2f3aff473a8392e42db1c8678e7b4?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="duration-icon" alt="" />
+                                  <span>07 Days Trip</span>
+                                </div>
+                                <div class="rating">
+                                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1277984b74cc0cfb2739989df873cb0faffeb4471b83ea6acc3dc717ccf48ed4?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="rating-icon" alt="" />
+                                  <span>4.7</span>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+                          <div class="destination-column">
+                            <article class="destination-card-alt">
+                              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/be592c1dd36723d4e7a861f60500f93c60bf787c553d7cb03871aabff4237c14?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="destination-photo" alt="Osaka cityscape" />
+                              <div class="destination-info-alt">
+                                <h3 class="destination-name">Osaka, Japan</h3>
+                                <p class="destination-price">$5,42k</p>
+                              </div>
+                              <div class="destination-details-alt">
+                                <div class="trip-duration">
+                                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3983137c794aa3a9a5dcc2b974d1fca3d7de9d623b14c39fa40f6700dd5c0560?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="duration-icon" alt="" />
+                                  <span>10 Days Trip</span>
+                                </div>
+                                <div class="rating">
+                                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1277984b74cc0cfb2739989df873cb0faffeb4471b83ea6acc3dc717ccf48ed4?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="rating-icon" alt="" />
+                                  <span>4.8</span>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <style>
+                    .testimonial-section {
+                      background-color: #f7f8fc;
+                      padding: 56px 70px 120px;
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                    }
+                    
+                    .testimonial-container {
+                      width: 100%;
+                      max-width: 1225px;
+                      margin: 0 0 -24px 29px;
+                    }
+                    
+                    .testimonial-content {
+                      display: flex;
+                      gap: 20px;
+                    }
+                    
+                    .testimonial-intro {
+                      width: 36%;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                    }
+                    
+                    .testimonial-heading {
+                      color: #fa7436;
+                      font: 700 48px/54px Volkhov, sans-serif;
+                      text-transform: lowercase;
+                    }
+                    
+                    .testimonial-subheading {
+                      color: #666;
+                      font: 400 16px/32px Roboto, sans-serif;
+                      margin-top: 24px;
+                    }
+                    
+                    .testimonial-icon {
+                      width: 112px;
+                      margin-top: 32px;
+                    }
+                    
+                    .testimonial-cards {
+                      width: 64%;
+                      display: flex;
+                      flex-grow: 1;
+                      gap: 19px;
+                      flex-wrap: wrap;
+                    }
+                    
+                    .avatar {
+                      width: 68px;
+                      border-radius: 50%;
+                      align-self: flex-start;
+                      margin-top: 64px;
+                    }
+                    
+                    .testimonial-card-wrapper {
+                      display: flex;
+                      flex-direction: column;
+                      flex-grow: 1;
+                      flex-basis: 0;
+                    }
+                    
+                    .testimonial-decoration {
+                      width: 169px;
+                      align-self: flex-end;
+                    }
+                    
+                    .testimonial-card {
+                      border-radius: 10px;
+                      box-shadow: 0 10px 30px rgba(34, 34, 34, 0.35);
+                      border: 2px solid rgba(102, 102, 102, 0.08);
+                      padding: 0 48px 22px 0;
+                      margin-top: -90px;
+                      background-color: #fff;
+                      z-index: 10;
+                    }
+                    
+                    .testimonial-text {
+                      padding: 36px 34px;
+                      font-size: 16px;
+                      line-height: 32px;
+                    }
+                    
+                    .testimonial-quote {
+                      color: #444;
+                      font-family: Poppins, sans-serif;
+                      font-weight: 500;
+                    }
+                    
+                    .testimonial-author {
+                      margin-left: 34px;
+                      font-family: Poppins, sans-serif;
+                    }
+                    
+                    .author-name {
+                      color: #222;
+                      font-size: 18px;
+                      font-weight: 600;
+                      opacity: 0.5;
+                    }
+                    
+                    .author-title {
+                      color: #666;
+                      font-size: 14px;
+                      font-weight: 500;
+                      opacity: 0.5;
+                      margin-top: 6px;
+                    }
+                    
+                    @media (max-width: 991px) {
+                      .testimonial-section {
+                        padding: 0 20px 100px;
+                      }
+                    
+                      .testimonial-container {
+                        margin-bottom: 10px;
+                      }
+                    
+                      .testimonial-content {
+                        flex-direction: column;
+                        align-items: stretch;
+                        gap: 0;
+                      }
+                    
+                      .testimonial-intro,
+                      .testimonial-cards {
+                        width: 100%;
+                      }
+                    
+                      .testimonial-intro {
+                        margin-top: 40px;
+                      }
+                    
+                      .testimonial-heading {
+                        font-size: 40px;
+                        line-height: 50px;
+                      }
+                    
+                      .testimonial-cards {
+                        margin-top: 40px;
+                      }
+                    
+                      .avatar {
+                        margin-top: 40px;
+                      }
+                    
+                      .testimonial-card {
+                        padding-right: 20px;
+                      }
+                    
+                      .testimonial-text {
+                        padding-left: 20px;
+                      }
+                    
+                      .testimonial-author {
+                        margin-left: 10px;
+                      }
+                    }
+                    </style>
+                    
+                    <section class="testimonial-section">
+                      <div class="testimonial-container">
+                        <div class="testimonial-content">
+                          <div class="testimonial-intro">
+                            <h2 class="testimonial-heading">What people say <br /> <span style="color: #fa7436;">about Us.</span></h2>
+                            <p class="testimonial-subheading">Our Clients send us bunch of smilies with our services and we love them.</p>
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d17f4d945333a3f00cab1b2751d7f607524795e3bf18efbd47c2082176cb07b1?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="" class="testimonial-icon" />
+                          </div>
+                          <div class="testimonial-cards">
+                            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/11902037359729b371bf5948038dc11e7db17ddb76ac2f802ad0c136d050cfc4?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="Testimonial avatar" class="avatar" />
+                            <div class="testimonial-card-wrapper">
+                              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/93d7e34c4db836eb566be0c267a530849f548adb9284e1d904e132e1ddada57f?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" alt="" class="testimonial-decoration" />
+                              <div class="testimonial-card">
+                                <div class="testimonial-text">
+                                  <p class="testimonial-quote">"On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no."</p>
+                                </div>
+                                <div class="testimonial-author">
+                                  <p class="author-name">Chris Thomas</p>
+                                  <p class="author-title">CEO of Red Button</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <style>
+                        .blog-section {
+                          border-radius: 0;
+                          display: flex;
+                          flex-direction: column;
+                        }
+                        
+                        .blog-background {
+                          background-color: #fefcfb;
+                          display: flex;
+                          width: 100%;
+                          flex-direction: column;
+                          align-items: center;
+                          justify-content: center;
+                          padding: 120px 80px;
+                        }
+                        
+                        @media (max-width: 991px) {
+                          .blog-background {
+                            max-width: 100%;
+                            padding: 100px 20px;
+                          }
+                        }
+                        
+                        .blog-content {
+                          display: flex;
+                          margin-bottom: -24px;
+                          width: 1170px;
+                          max-width: 100%;
+                          flex-direction: column;
+                          align-items: center;
+                        }
+                        
+                        @media (max-width: 991px) {
+                          .blog-content {
+                            margin-bottom: 10px;
+                          }
+                        }
+                        
+                        .blog-title {
+                          color: #000;
+                          font: 700 48px/1 Volkhov, sans-serif;
+                        }
+                        
+                        @media (max-width: 991px) {
+                          .blog-title {
+                            max-width: 100%;
+                            font-size: 40px;
+                          }
+                        }
+                        
+                        .blog-grid {
+                          align-self: stretch;
+                          margin-top: 64px;
+                        }
+                        
+                        @media (max-width: 991px) {
+                          .blog-grid {
+                            max-width: 100%;
+                            margin-top: 40px;
+                          }
+                        }
+                        
+                        .blog-row {
+                          gap: 20px;
+                          display: flex;
+                        }
+                        
+                        @media (max-width: 991px) {
+                          .blog-row {
+                            flex-direction: column;
+                            align-items: stretch;
+                            gap: 0;
+                          }
+                        }
+                        
+                        .blog-column {
+                          display: flex;
+                          flex-direction: column;
+                          line-height: normal;
+                          width: 25%;
+                          margin-left: 0;
+                        }
+                        
+                        @media (max-width: 991px) {
+                          .blog-column {
+                            width: 100%;
+                          }
+                        }
+                        
+                        .blog-card {
+                          display: flex;
+                          flex-grow: 1;
+                          flex-direction: column;
+                          align-items: start;
+                        }
+                        
+                        @media (max-width: 991px) {
+                          .blog-card {
+                            margin-top: 30px;
+                          }
+                        }
+                        
+                        .blog-image {
+                          aspect-ratio: 1;
+                          object-fit: contain;
+                          object-position: center;
+                          width: 100%;
+                          border-radius: 8px;
+                          align-self: stretch;
+                        }
+                        
+                        .blog-card-title {
+                          color: #222;
+                          margin-top: 24px;
+                          font: 500 18px/26px Poppins, sans-serif;
+                        }
+                        
+                        .blog-date {
+                          color: #999;
+                          margin-top: 16px;
+                          font: 400 16px/2 Inter, sans-serif;
+                        }
+                        
+                        .highlight {
+                          color: #fa7436;
+                        }
+                        
+                        .blog-nav {
+                          aspect-ratio: 3.86;
+                          object-fit: contain;
+                          object-position: center;
+                          width: 54px;
+                          margin-top: 45px;
+                        }
+                        
+                        @media (max-width: 991px) {
+                          .blog-nav {
+                            margin-top: 40px;
+                          }
+                        }
+                        
+                        .visually-hidden {
+                          position: absolute;
+                          width: 1px;
+                          height: 1px;
+                          margin: -1px;
+                          padding: 0;
+                          overflow: hidden;
+                          clip: rect(0, 0, 0, 0);
+                          white-space: nowrap;
+                          border: 0;
+                        }
+                        </style>
+                        
+                        <section class="blog-section">
+                          <div class="blog-background">
+                            <div class="blog-content">
+                              <h2 class="blog-title">Get update with <span class="highlight">latest blog</span></h2>
+                              <div class="blog-grid">
+                                <div class="blog-row">
+                                  <article class="blog-column">
+                                    <div class="blog-card">
+                                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d886060e98e3898f9c5e8c504842845e98461f749a7737d5a2b512734292e6ed?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="blog-image" alt="Blog post image about travelling for a year" />
+                                      <h3 class="blog-card-title">The Amazing Difference a Year of Travelling.</h3>
+                                      <time class="blog-date">July 27, 2021</time>
+                                    </div>
+                                  </article>
+                                  <article class="blog-column">
+                                    <div class="blog-card">
+                                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/640c1d61317b1a721c6ad491a64af33d01b049921828f3c58bac245ade47df8f?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="blog-image" alt="Blog post image about self-discovery through travel" />
+                                      <h3 class="blog-card-title">Travel far enough, you meet yourself.</h3>
+                                      <time class="blog-date">July 27, 2021</time>
+                                    </div>
+                                  </article>
+                                  <article class="blog-column">
+                                    <div class="blog-card">
+                                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f85b95b94299a3379abd654cf4ea8bae2e9213bdf61c59e89cacf37acfb7067f?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="blog-image" alt="Blog post image about saving money while visiting Africa" />
+                                      <h3 class="blog-card-title">How to Save Money While Visiting Africa.</h3>
+                                      <time class="blog-date">July 27, 2021</time>
+                                    </div>
+                                  </article>
+                                  <article class="blog-column">
+                                    <div class="blog-card">
+                                      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c934ca1667736f8278f2e38d66aecc9677d74f77ecced87191c30a53dce997d3?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="blog-image" alt="Blog post image about reflections on 5 months of travel" />
+                                      <h3 class="blog-card-title">Reflections on 5 Months of Travel: Time to Hang</h3>
+                                      <time class="blog-date">July 27, 2021</time>
+                                    </div>
+                                  </article>
+                                </div>
+                              </div>
+                              <nav>
+                                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7b85637ec7e02ab33f9447904e809eb7660e2d194148d42918ae0acbe1a46fdc?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="blog-nav" alt="" />
+                              </nav>
+                            </div>
+                          </div>
+                        </section>
+                        <style>
+                            .footer { border-radius: 0; display: flex; flex-direction: column; }
+                            .newsletter-bg { border-radius: 16px; background-color: #fa7436; align-self: center; z-index: 10; display: flex; width: 1170px; max-width: 100%; flex-direction: column; padding: 9px 2px 0; }
+                            .newsletter-content { display: flex; flex-direction: column; position: relative; min-height: 407px; align-items: center; justify-content: center; padding: 76px 80px; }
+                            @media (max-width: 991px) { .newsletter-content { max-width: 100%; padding: 0 20px; } }
+                            .newsletter-bg-image { position: absolute; inset: 0; height: 100%; width: 100%; object-fit: cover; object-position: center; }
+                            .newsletter-text-container { position: relative; display: flex; margin-left: 40px; width: 674px; max-width: 100%; flex-direction: column; }
+                            .newsletter-title { color: #fff; text-align: center; margin: 0 12px 0 17px; font: 700 48px Volkhov, sans-serif; }
+                            @media (max-width: 991px) { .newsletter-title { max-width: 100%; margin-right: 10px; font-size: 40px; } }
+                            .newsletter-form { border-radius: 10px; background-color: #fff; display: flex; margin-top: 64px; width: 100%; gap: 20px; flex-wrap: wrap; justify-content: space-between; padding: 9px 9px 9px 22px; font: 400 16px Poppins, sans-serif; }
+                            @media (max-width: 991px) { .newsletter-form { max-width: 100%; padding-left: 20px; margin-top: 40px; } }
+                            .input-wrapper { display: flex; gap: 8px; color: #999; margin: auto 0; }
+                            .email-icon { aspect-ratio: 1.19; object-fit: contain; object-position: center; width: 19px; border-radius: 0; margin: auto 0; }
+                            .subscribe-btn { border-radius: 8px; background-color: #fa7436; color: #fff; white-space: nowrap; padding: 13px 26px; }
+                            @media (max-width: 991px) { .subscribe-btn { white-space: initial; padding: 0 20px; } }
+                            .footer-bg { background-color: #f7f8fc; display: flex; width: 100%; flex-direction: column; align-items: center; padding: 326px 80px 48px; }
+                            @media (max-width: 991px) { .footer-bg { max-width: 100%; padding: 100px 20px 0; } }
+                            .footer-content { display: flex; width: 1172px; max-width: 100%; flex-direction: column; }
+                            @media (max-width: 991px) { .footer-columns { max-width: 100%; margin-right: 3px; } }
+                            .footer-row { gap: 20px; display: flex; }
+                            @media (max-width: 991px) { .footer-row { flex-direction: column; align-items: stretch; gap: 0; } }
+                            .footer-column { display: flex; flex-direction: column; line-height: normal; width: 47%; margin-left: 0; }
+                            @media (max-width: 991px) { .footer-column { width: 100%; } }
+                            .footer-logo-section { display: flex; width: 100%; flex-direction: column; align-items: flex-start; }
+                            @media (max-width: 991px) { .footer-logo-section { margin-top: 40px; } }
+                            .logo-wrapper { display: flex; gap: 10px; color: #222; white-space: nowrap; letter-spacing: 0.14px; font: 700 24px/1 Volkhov, sans-serif; }
+                            @media (max-width: 991px) { .logo-wrapper { white-space: initial; } }
+                            .logo-text { flex-grow: 1; }
+                            .logo-icon { aspect-ratio: 1; object-fit: contain; object-position: center; width: 19px; fill: #666; margin: auto 0; }
+                            .footer-description { color: #666; align-self: stretch; margin-top: 24px; font: 500 16px/32px Poppins, sans-serif; }
+                            .social-icons { aspect-ratio: 3.66; object-fit: contain; object-position: center; width: 176px; margin-top: 16px; max-width: 100%; }
+                            .footer-links-column { display: flex; flex-direction: column; line-height: normal; width: 17%; margin-left: 20px; }
+                            @media (max-width: 991px) { .footer-links-column { width: 100%; } }
+                            .footer-links { display: flex; flex-direction: column; align-items: flex-start; color: #666; white-space: nowrap; font: 400 18px/1 Poppins, sans-serif; }
+                            @media (max-width: 991px) { .footer-links { margin-top: 40px; white-space: initial; } }
+                            .footer-heading { color: #222; font-weight: 600; align-self: stretch; }
+                            .footer-link { margin-top: 16px; }
+                            .footer-link:first-of-type { margin-top: 32px; }
+                            .privacy-policy { color: #666; align-self: center; margin: 8px 0 0 55px; font: 400 18px/1 Poppins, sans-serif; }
+                            .footer-divider { margin-top: 39px; width: 100%; height: 1px; border: 1px solid rgba(153, 153, 153, 0.56); }
+                            .footer-bottom { display: flex; margin-top: 40px; gap: 20px; color: #666; flex-wrap: wrap; justify-content: space-between; font: 400 16px Poppins, sans-serif; }
+                            @media (max-width: 991px) { .footer-bottom { max-width: 100%; } }
+                            .copyright, .terms { opacity: 0.8; }
+                            .terms { text-align: right; }
+                            .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+                            </style>
+                            
+                            <footer class="footer">
+                              <section class="newsletter-bg">
+                                <div class="newsletter-content">
+                                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9725052ba14d721a11311c420fd6ec9ea80747f8544c5a872fba8c2a9b0431de?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="newsletter-bg-image" alt="" />
+                                  <div class="newsletter-text-container">
+                                    <h2 class="newsletter-title">Subscribe and get exclusive deals & offer</h2>
+                                    <form class="newsletter-form">
+                                      <div class="input-wrapper">
+                                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4d9507a9082c2c5d2b3cc194aa63ea75de38943dfd0d8f7313c573be7e73614c?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="email-icon" alt="" />
+                                        <label for="email-input" class="visually-hidden">Enter your email</label>
+                                        <input type="email" id="email-input" placeholder="Enter your mail" aria-label="Enter your email" />
+                                      </div>
+                                      <button type="submit" class="subscribe-btn">Subscribe</button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </section>
+                              
+                              <div class="footer-bg">
+                                <div class="footer-content">
+                                  <div class="footer-columns">
+                                    <div class="footer-row">
+                                      <div class="footer-column">
+                                        <div class="footer-logo-section">
+                                          <div class="logo-wrapper">
+                                            <span class="logo-text">Trabook</span>
+                                            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/902ca2bc5764b1f9bce2dfa075a02331e461c2108d12098b9ac104de9926ca96?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="logo-icon" alt="" />
+                                          </div>
+                                          <p class="footer-description">
+                                            Book your trip in minute, get full<br />
+                                            Control for much longer.
+                                          </p>
+                                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4b695106f0a4e61086a7e40085f7267ba7e1d4df34391745e606c6f0789725c4?placeholderIfAbsent=true&apiKey=70a1b8edffd6461a8394feac64677b3d" class="social-icons" alt="Social media icons" />
+                                        </div>
+                                      </div>
+                                      <div class="footer-links-column">
+                                        <nav class="footer-links">
+                                          <h3 class="footer-heading">Company</h3>
+                                          <a href="#" class="footer-link">About</a>
+                                          <a href="#" class="footer-link">Careers</a>
+                                          <a href="#" class="footer-link">Logistic</a>
+                                        </nav>
+                                      </div>
+                                      <div class="footer-links-column">
+                                        <nav class="footer-links">
+                                          <h3 class="footer-heading">Contact</h3>
+                                          <a href="#" class="footer-link">Help/FAQ</a>
+                                          <a href="#" class="footer-link">Press</a>
+                                          <a href="#" class="footer-link">Affilates</a>
+                                        </nav>
+                                      </div>
+                                      <div class="footer-links-column">
+                                        <nav class="footer-links">
+                                          <h3 class="footer-heading">More</h3>
+                                          <a href="#" class="footer-link">Press Centre</a>
+                                          <a href="#" class="footer-link">Our Blog</a>
+                                          <a href="#" class="footer-link">Low fare tips</a>
+                                        </nav>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a href="#" class="privacy-policy">Privacy & Policy</a>
+                                  <hr class="footer-divider" />
+                                  <div class="footer-bottom">
+                                    <p class="copyright">Copyright, Trabook 2022. All rights reserved.</p>
+                                    <a href="#" class="terms">Terms & Conditions</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </footer>
